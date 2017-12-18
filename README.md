@@ -656,11 +656,11 @@ n больше | O(1) или O(log n)
 
 Например, массив
 
-> фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s1.PNG">
 
 будет выглядеть следующим образом после сортировки:
 
-> фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s2.PNG">
 
 ### Алгоритмы O(n<sup>2</sup>)
 
@@ -682,9 +682,11 @@ for (int i = 0; i < n; i++) {
 
 Например, в массиве
 
-> фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s3.PNG">
 
 первый этап сортировки элементов пузырьком выглядит следующим образом:
+
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s4.PNG">
 
 ### Инверсия
 
@@ -692,11 +694,11 @@ for (int i = 0; i < n; i++) {
 
 Полезной концепцией при анализе алгоритмов сортировки является инверсия: пара элементов массива `(array[a], array[b])`, так что `a < b и array[a] > array[b]`, т. е. элементы находятся в неправильном порядке. Например, массив
 
-> фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s5.PNG">
 
 имеет три инверсии: (6, 3), (6, 5) и (9, 8). Количество инверсий указывает, какая работа необходима для сортировки массива. Массив полностью отсортирован, когда нет инверсий. С другой стороны, если элементы массива находятся в обратном порядке, число инверсий максимально возможное:
 
-> фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s6.PNG">
 
 Перестановка пары последовательных элементов, которые находятся в неправильном порядке снимает ровно одна инверсию из массива. Следовательно, если алгоритм сортировки может заменять только последовательные элементы, каждый своп удаляет не более одной инверсии, а временная сложность алгоритма - не менее O(n<sup>2</sup>).
 
@@ -714,20 +716,20 @@ for (int i = 0; i < n; i++) {
 
 Сортировка слиянием - эффективный алгоритм, поскольку он уменьшает размер подмассива на каждом шаге. Рекурсия состоит из уровней O(log n), и обработка каждого уровня занимает O(n). Слияние массивов `array[a...k]` и `array[k + 1...b]` возможно в линейном времени, потому что они уже отсортированы.
 
-> Фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s7.PNG">
 
 Массив будет разделен на два подмассива:
 
-> Фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s8.PNG">
 
 Затем подмассивы будут отсортированы рекурсивно следующим образом:
 
-> Фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s9.PNG">
 
 Наконец, алгоритм объединяет отсортированные подмассивы и создает окончательный
 отсортированный массив:
 
-> Фотка
+<img src="https://rawgit.com/maxtereshko/competetive-handbook-ru/master/img/s10.PNG">
 
 ## Сортировка в C++
 ## Двоичный поиск
